@@ -34,7 +34,6 @@ const Main = () => {
       >
         {containers &&
           containers.map((cont, index) => {
-            console.log(cont.color);
             return (
               <Reorder.Item key={cont.id} value={cont}>
                 <NoteCont

@@ -36,7 +36,7 @@ const NoteCont = ({ color, contDeleteButtonClick }: NoteCont_Props) => {
 
   return (
     <div
-      className={`flex flex-col gap-4 w-[300px] rounded-md p-4 pb-10 bg-${color}-500`}
+      className={`flex flex-col gap-4 w-[300px] rounded-md p-4 pb-10 ${color}`}
     >
       <div className="flex gap-2 justify-end">
         <Button className={""} onClick={contDeleteButtonClick}>
