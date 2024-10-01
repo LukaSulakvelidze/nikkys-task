@@ -75,7 +75,7 @@ const NoteCont = ({ color, contDeleteButtonClick }: NoteCont_Props) => {
               key={index}
             >
               <div
-                className={`flex items-center justify-between border-none bg-${color}-500`}
+                className={`flex items-center justify-between border-none ${color}`}
               >
                 <Input
                   className={"bg-red-500"}
