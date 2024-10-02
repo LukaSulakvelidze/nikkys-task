@@ -31,7 +31,7 @@ const Main = () => {
   return (
     <main className="flex flex-col justify-center items-center gap-6 my-8">
       <Button
-        className={"absolute bottom-7 left-7"}
+        className={"fixed bottom-7 left-7"}
         onClick={() => handleDownloadAllTasks(toast)}
       >
         <FaDownload className="w-[40px] h-[40px] text-blue-700" />
