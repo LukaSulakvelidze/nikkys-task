@@ -9,6 +9,7 @@ export interface Button_Props {
 export interface Input_Props {
   className: string;
   inputOnChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
   type: string;
   value?: string;
   checked?: boolean;
@@ -32,6 +33,7 @@ export interface AddbuttonCont_Props {
 }
 
 export interface NoteCont_Props {
+  containerId: number;
   color: string;
   contDeleteButtonClick: () => void;
 }

@@ -4,6 +4,7 @@ import React from "react";
 const Input = ({
   className,
   inputOnChange,
+  onKeyDown,
   type,
   value,
   checked = false,
@@ -13,6 +14,7 @@ const Input = ({
     <input
       className={className}
       onChange={inputOnChange}
+      onKeyDown={onKeyDown}
       type={type}
       value={value}
       checked={checked}

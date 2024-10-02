@@ -9,9 +9,8 @@ const AddButtonCont = ({ containers, setContainers }: AddbuttonCont_Props) => {
   const colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"];
 
   const createNoteCont = (color: string) => {
-    const lastId = containers[containers.length - 1]?.id || 0;
     const newContainer: Container = {
-      id: lastId + 1,
+      id: new Date().getTime(),
       color: color,
     };
     setContainers([...containers, newContainer]);
